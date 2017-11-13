@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code 301 - UI Challenge 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>UI Challenge - Custom Form Elements</h1>
+
+      <form id="demo">
+        <label for="valid">text input</label>
+        <input name="valid" type="text" placeholder="placeholder text" />
+
+        <label for="invalid">text input w/ validation error</label>
+        <input name="invalid" required type="text" placeholder="placeholder text" />
+
+        <label for="blankSelect">select box</label>
+        <select name="blankSelect">
+          <option disabled selected hidden>please select an option...</option>
+        </select>
+
+        <label for="selectOptions">select box - open</label>
+        <select name="selectOptions">
+          <option disabled selected hidden>please select an option...</option>
+          <option>option 1</option>
+          <option>option 2</option>
+          <option>option 3</option>
+          <option>option 4</option>
+          <option>option 5</option>
+        </select>
+
+        <br /><br />
+
+        <label>checkbox</label><br />
+        <label class="check">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" checked />
+          <span class="checkmark"></span>
+        </label>
+
+        <br /><br />
+
+        <label>radio</label><br />
+        <label class="check radio">
+          <input type="checkbox" />
+          <span class="checkmark radiobutton"></span>
+        </label>
+
+        <label class="check radio">
+          <input type="checkbox" checked />
+          <span class="checkmark radiobutton"></span>
+        </label>
+
+        <br /><br />
+
+        <label>buttons</label> <br />
+        <input type="submit" value="submit" />
+        <input type="submit" value="submit" id="active" />
+      </form>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("reset.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #555;
+  line-height: 1.3em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
+
+#wrapper {
+  width: 35em;
+  margin: auto;
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 0.6em 0.7em;
+  font-weight: 100;
+  outline: none;
+  margin-top: 0.5em;
+  margin-bottom: 2.2em;
+  border: 0.5px solid #999;
+  border-radius: 2px;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+input[type=text] {
+  width: 100%;
+}
+
+input:invalid {
+  border: 0.5px solid #c60101;
+}
+
+.afterinvalid {
+  content: "please enter a valid username";
+  font-size: 0.9em;
+  color: #c60101;
+  text-align: right;
+  margin: -25px 0 45px 0;
+}
+
+select {
+  background: #fff;
+  font-size: 1.2em;
+  font-weight: 100;
+  outline: none;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 2.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.6em 0.7em;
+  border-radius: 2px;
+  color: #bbb;
+}
+
+option {
+  background: #000;
+}
+
+.check {
+  display: inline-block;
+  margin: 10px 30px 10px 0;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check input {
+  visibility: hidden;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #ddd;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check .checkmark:after {
+  left: 20px;
+  top: 3px;
+  border-radius: 3px;
+  width: 10px;
+  height: 35px;
+  border: solid gray;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+.radiobutton {
+  border-radius: 50%;
+}
+
+.radio .checkmark:after {
+  top: 19px;
+  left: 19px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #000;
+}
+
+input[type=submit] {
+  border: 0;
+  padding: 13px 35px;
+  font-weight: 500;
+  color: #444;
+  background: #ddd;
+  border-radius: 2px;
+  margin: 15px 20px 30px 0;
+}
+
+input[type=submit]:active {
+  color: #fff;
+  background: #333;
+}
+
+#active {
+  color: #fff;
+  background: #333;
+}
